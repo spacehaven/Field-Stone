@@ -59,19 +59,19 @@ pip3 install speedtest-cli
 2. Before Upgrade Testing:
 ```bash
 # Basic test with internet speed test
-python3 network_perf_test.py -o before_upgrade.csv
+python3 network-test-suite.py -o before_upgrade.csv
 
 # If you have an iperf3 server on your network (recommended for best results):
-python3 network_perf_test.py -o before_upgrade.csv -s 192.168.1.100
+python3 network-test-suite.py -o before_upgrade.csv -s 192.168.1.100
 
 # Run more iterations for better statistical significance
-python3 network_perf_test.py -o before_upgrade.csv -s 192.168.1.100 -i 5
+python3 network-test-suite.py -o before_upgrade.csv -s 192.168.1.100 -i 5
 ```
 
 3. After Upgrade Testing:
 ```bash
 # Run the same command you used before the upgrade
-python3 network_perf_test.py -o after_upgrade.csv -s 192.168.1.100 -i 5
+python3 network-test-suite.py -o after_upgrade.csv -s 192.168.1.100 -i 5
 ```
 
 4. Comparison:
